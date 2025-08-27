@@ -200,7 +200,11 @@ npm run test:watch
 
 Acesse a documentação interativa em: `http://localhost:3000/api-docs`
 
+<img width="1457" height="1059" alt="image" src="https://github.com/user-attachments/assets/216db6a7-8f34-4d5a-8f3a-cadf4fff1142" />
+
 ### Endpoints Principais
+
+<img width="2049" height="917" alt="image" src="https://github.com/user-attachments/assets/531d9315-755d-4c69-a3c6-fe44acfd6247" />
 
 #### Contatos
 
