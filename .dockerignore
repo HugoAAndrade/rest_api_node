@@ -1,0 +1,48 @@
+# Dependências
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de teste
+tests/
+coverage/
+*.test.js
+jest.config.js
+
+# Arquivos de desenvolvimento
+.git
+.gitignore
+README.md
+.env.example
+.vscode/
+.idea/
+
+# Logs
+logs
+*.log
+
+# Arquivos temporários
+.tmp
+.temp
+*.tmp
+*.temp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de build
+dist/
+build/
+
+# Banco de dados local
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
