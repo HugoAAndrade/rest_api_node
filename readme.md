@@ -139,7 +139,7 @@ npm start
 4. Configure no arquivo `.env`:
 
 ```env
-HGBRASIL_API_KEY=sua_chave_aqui
+HGBRASIL_API_KEY=chave_api
 ```
 
 ## 🐳 Docker
@@ -312,7 +312,7 @@ RATE_LIMIT_MAX_REQUESTS=100
 - **Caching**: Cache de respostas da API externa
 - **Compressão**: Gzip para respostas HTTP
 
-## 🤝 Contribuição
+<!-- ## 🤝 Contribuição
 
 ### Como Contribuir
 
@@ -320,7 +320,7 @@ RATE_LIMIT_MAX_REQUESTS=100
 2. Crie uma branch para sua feature
 3. Commit suas mudanças
 4. Push para a branch
-5. Abra um Pull Request
+5. Abra um Pull Request -->
 
 ### Padrões de Código
 
@@ -329,9 +329,9 @@ RATE_LIMIT_MAX_REQUESTS=100
 - Conventional Commits
 - Testes obrigatórios
 
-## 📄 Licença
+<!-- ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes. -->
 
 ## 👥 Autor
 
@@ -339,7 +339,7 @@ Desenvolvido como teste técnico para vaga de Desenvolvedor Back-End Node.js.
 
 ---
 
-## 🆘 Suporte
+<!-- ## 🆘 Suporte
 
 Para dúvidas ou problemas:
 
@@ -347,4 +347,4 @@ Para dúvidas ou problemas:
 2. Consulte os logs da aplicação
 3. Abra uma issue no repositório
 
-**Status do Projeto**: ✅ Completo e funcional
+**Status do Projeto**: ✅ Completo e funcional -->
