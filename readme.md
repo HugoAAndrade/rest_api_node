@@ -202,6 +202,8 @@ Acesse a documentação interativa em: `http://localhost:3000/api-docs`
 
 ### Endpoints Principais
 
+<img width="2124" height="866" alt="image" src="https://github.com/user-attachments/assets/12cba521-09bb-483d-80e1-187b6cd09ff7" />
+
 #### Contatos
 
 - `POST /api/contacts` - Criar contato
