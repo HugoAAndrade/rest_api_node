@@ -10,7 +10,7 @@ services:
       - NODE_ENV=production
       - PORT=3000
       - DB_PATH=/app/data/agenda.db
-      - HGBRASIL_API_KEY=${HGBRASIL_API_KEY:-your_api_key_here}
+      - HGBRASIL_API_KEY=${HGBRASIL_API_KEY:-api_key}
       - HGBRASIL_BASE_URL=https://api.hgbrasil.com/weather
       - RATE_LIMIT_WINDOW_MS=900000
       - RATE_LIMIT_MAX_REQUESTS=100
@@ -36,7 +36,7 @@ services:
       - NODE_ENV=development
       - PORT=3000
       - DB_PATH=/app/data/agenda.db
-      - HGBRASIL_API_KEY=${HGBRASIL_API_KEY:-your_api_key_here}
+      - HGBRASIL_API_KEY=${HGBRASIL_API_KEY:-api_key}
     volumes:
       - .:/app
       - /app/node_modules

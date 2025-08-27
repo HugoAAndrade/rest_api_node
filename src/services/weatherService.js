@@ -13,7 +13,7 @@ class WeatherService {
       // Tentar extrair cidade do endereço
       // Formato esperado: "Rua, Número, Cidade, Estado"
       const parts = address.split(',').map(part => part.trim());
-      
+
       if (parts.length >= 3) {
         // Assumir que a cidade é o penúltimo elemento
         return parts[parts.length - 2];
@@ -34,7 +34,7 @@ class WeatherService {
   async getWeatherInfo(address) {
     try {
       const city = this.extractCityFromAddress(address);
-      
+
       if (!city) {
         throw new Error('Não foi possível extrair a cidade do endereço');
       }
@@ -46,7 +46,7 @@ class WeatherService {
       };
 
       // Adicionar chave da API se disponível
-      if (this.apiKey && this.apiKey !== 'your_api_key_here') {
+      if (this.apiKey && this.apiKey !== 'api_key') {
         params.key = this.apiKey;
       }
 
@@ -85,7 +85,7 @@ class WeatherService {
       return weatherInfo;
     } catch (error) {
       console.error('❌ Erro ao buscar informações do clima:', error.message);
-      
+
       // Retornar erro estruturado
       return {
         error: true,
@@ -108,14 +108,14 @@ class WeatherService {
 
       const temperature = weatherInfo.temperature;
       const condition = weatherInfo.condition || weatherInfo.description || '';
-      const isRainy = condition.toLowerCase().includes('chuva') || 
-                     condition.toLowerCase().includes('chuvisco') ||
-                     condition.toLowerCase().includes('rain') ||
-                     condition.toLowerCase().includes('drizzle');
-      const isSunny = condition.toLowerCase().includes('sol') || 
-                     condition.toLowerCase().includes('limpo') ||
-                     condition.toLowerCase().includes('clear') ||
-                     condition.toLowerCase().includes('sunny');
+      const isRainy = condition.toLowerCase().includes('chuva') ||
+        condition.toLowerCase().includes('chuvisco') ||
+        condition.toLowerCase().includes('rain') ||
+        condition.toLowerCase().includes('drizzle');
+      const isSunny = condition.toLowerCase().includes('sol') ||
+        condition.toLowerCase().includes('limpo') ||
+        condition.toLowerCase().includes('clear') ||
+        condition.toLowerCase().includes('sunny');
 
       let suggestion = '';
       let weather_status = 'normal';
